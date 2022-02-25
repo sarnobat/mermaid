@@ -1,13 +1,12 @@
 # mermaid
 ```mermaid
 gantt
-dateFormat  YYYY-MM-DD
-title Adding GANTT diagram to mermaid
-excludes weekdays 2014-01-10
+dateFormat  YYYY
+title Atletico Players
 
 section A section
-Completed task            :done,    des1, 2014-01-06,2014-01-08
-Active task               :active,  des2, 2014-01-09, 3d
-Future task               :         des3, after des2, 5d
-Future task2               :         des4, after des3, 5d
+Luis Aragones            :done,    1964,1974
+Adelardo               :done,  1959,1976
+Garate:done,1966,1977
+Joao Felix               :         2019, 222
 ```
