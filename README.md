@@ -29,6 +29,14 @@ pie
 
 Sequence diagrams are better than data flow diagrams for typical OOP code (with mutable state) because the data flow is chained rather than linear, and the column alignment by class allows you to see the common class easily
 
+Options for sequence diagrams:
+* Qsde
+* Textdiagram
+* Mermaid
+* Plantuml
+* Textart.io (ASCII.sequence: https://textart.io/sequence)
+
+
 ```mermaid
 sequenceDiagram
     Alice->>John: Hello John, how are you?
