@@ -3,9 +3,13 @@
 ### Sequence diagram
 
 ```mermaid
+
 sequenceDiagram
     "AbstractLogger.java" ->> "AbstractMessageFactory.java" : newMessage()
     "AbstractMessageFactory.java" ->> "SimpleMessage.java" : SimpleMessage()
+    "SimpleMessage.java" ->> "AbstractMessageFactory.java" : "return Message"
+    "AbstractMessageFactory.java" ->> "AbstractLogger.java" : "return Message"
+    "AbstractLogger.java" ->> "Logger.java" : log()
 ```
 
 Sequence diagrams are better than data flow diagrams for typical OOP code (with mutable state) because the data flow is chained rather than linear, and the column alignment by class allows you to see the common class easily
