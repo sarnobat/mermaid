@@ -39,7 +39,7 @@ Options for sequence diagrams:
 
 ```mermaid
 sequenceDiagram
-    Alice->>John: Hello John, how are you?
+    "AbstractLogger.java_info()" ->>John: Hello John, how are you?
     John-->>Alice: Great!
     Alice-)John: See you later!
 ```
