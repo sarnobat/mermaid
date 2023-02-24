@@ -19,7 +19,7 @@ Options for sequence diagrams:
 * Textdiagram
 * Mermaid
 * Plantuml
-* Textart.io (ASCII.sequence: https://textart.io/sequence)
+* Textart.io (ASCII.sequence: https://textart.io/sequence, https://github.com/weidagang/text-diagram)
 
 
 
