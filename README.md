@@ -22,6 +22,27 @@ Options for sequence diagrams:
 * Textart.io (ASCII.sequence: https://textart.io/sequence, https://github.com/weidagang/text-diagram)
    * I've made a command line version here: ~/src.git/javascript/sequence_diagram/text-diagram.js
 
+```
++---------------------+         +-------------------------+                 +---------------+ +-------------+
+| AbstractLogger_java |         | AbstractMessageFactory  |                 | SimpleMessage | | Logger_java |
++---------------------+         +-------------------------+                 +---------------+ +-------------+
+           |                                 |                                      |                |
+           | newMessage(string)              |                                      |                |
+           |-------------------------------->|                                      |                |
+           |                                 |                                      |                |
+           |                                 | return SimpleMessage(string)         |                |
+           |                                 |------------------------------------->|                |
+           |                                 |                                      |                |
+           |                                 |                        SimpleMessage |                |
+           |                                 |<-------------------------------------|                |
+           |                                 |                                      |                |
+           |                  return Message |                                      |                |
+           |<--------------------------------|                                      |                |
+           |                                 |                                      |                |
+           | log(Message)                    |                                      |                |
+           |---------------------------------------------------------------------------------------->|
+           |                                 |                                      |                |
+```
 
 
 
