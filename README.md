@@ -1,5 +1,29 @@
 # mermaid
 
+### Atletico players
+
+
+
+
+```mermaid
+gantt
+dateFormat  YYYY
+title Atletico Players
+
+section A section
+Luis Aragones            :done,    1964,1974
+Adelardo               :done,  1959,1976
+Garate:done,1966,1977
+Joao Felix               :         2019, 222
+calleja    : 1958,1972
+collar    : 1952,1969
+aparicio    : 1938-1952
+rivilla    : 1954,1968
+tomas    : 1984,1996
+koke    : 2013,2024
+aguilera : 1988 , 2005
+```
+
 ### Sequence diagram
 
 ```mermaid
@@ -66,29 +90,6 @@ Options for sequence diagrams:
 
 
 
-### Atletico players
-
-
-
-
-```mermaid
-gantt
-dateFormat  YYYY
-title Atletico Players
-
-section A section
-Luis Aragones            :done,    1964,1974
-Adelardo               :done,  1959,1976
-Garate:done,1966,1977
-Joao Felix               :         2019, 222
-calleja    : 1958,1972
-collar    : 1952,1969
-aparicio    : 1938-1952
-rivilla    : 1954,1968
-tomas    : 1984,1996
-koke    : 2013,2024
-aguilera : 1988 , 2005
-```
 
 ### TODO: Wimbledon victories (gantt)
 
