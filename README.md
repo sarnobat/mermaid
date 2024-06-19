@@ -11,7 +11,7 @@ dateFormat  YYYY
 title Atletico Players
 
 section A section
-aparicio    : 1938-1952
+aparicio    : 1938,1952
 collar    : 1952,1969
 rivilla    : 1954,1968
 calleja    : 1958,1972
