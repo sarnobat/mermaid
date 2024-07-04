@@ -2,9 +2,6 @@
 
 ### Atletico players
 
-
-
-
 ```mermaid
 gantt
 dateFormat  YYYY
@@ -25,6 +22,23 @@ koke    : 2013,2024
 Joao Felix               :         2019, 2022
 ```
 
+### Stadiums
+```mermaid
+gantt
+dateFormat  YYYY
+title Stadiums
+
+section A section
+San Mames    : 1938,1952
+Vicente Calderon : 1945,1958
+Sarria: 1998,2000
+Stadium of Light: 1998,2000
+Pride Park: 1998,2000
+Madjetski Stadium: 1998,2000
+Reebok Stadium: 1998,2000
+Highbury: 1998,2000
+Maine Road: 1998,2000
+```
 ### Sequence diagram
 
 ```mermaid
