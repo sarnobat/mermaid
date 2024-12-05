@@ -100,7 +100,10 @@ Luis Aragones            :done,    1964,1974
 Garate:done,1966,1977
 tomas    : 1984,1996
 aguilera : 1988 , 2005
+antonio lopez: 2001, 2004
+antonio lopez: 2004, 2012
 koke    : 2013,2024
+oblak    : 2014,2024
 Joao Felix               :         2019, 2022
 ```
 
