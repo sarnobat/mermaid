@@ -10,19 +10,23 @@ dateFormat  YYYY
 title Players
 
 section A section
+Matthews      : 1932,1965
 shevchecko    : 1993,2012
 totti    : 1993,2017
 buffon    : 1995,2023
 giggs    : 1990,2014
-Torres    : 1938,1952
+Torres    : 2001,2019
+O'Leary  : 1975,1995
 Shilton    : 1966,1997
-vierchwood    : 1938,1952
-Maldini    : 1938,1952
+vierchwood    : 1976,2000
+Matthaus  : 1978,2000
+Bergomi :1979,1999
+Maldini    : 1983,2001
 Sanchis    : 1938,1952
-Maradona    : 1938,1952
-zubizaretta    : 1938,1952
+Maradona    : 1976,1997
+zubizaretta    : 1979,1998
 De Boer    : 1938,1952
-Laudrup    : 1938,1952
+Laudrup    : 1981,1998
 ```
 ### Budget
 ```mermaid
