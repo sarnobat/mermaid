@@ -180,6 +180,7 @@ Options for sequence diagrams:
 * Plantuml
 * Textart.io (ASCII.sequence: https://textart.io/sequence, https://github.com/weidagang/text-diagram)
    * I've made a command line version here: ~/src.git/javascript/sequence_diagram/text-diagram.js
+* adia
 
 ```
 +---------------------+         +-------------------------+                 +---------------+ +-------------+    +-----------------------------------------+  +-------------------------+   +-----------------------+ +-----------------------------------+ +---------------------+   +---------------------------+
