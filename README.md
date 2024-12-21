@@ -15,19 +15,18 @@ Shilton    : 1966,1997
 O'Leary  : 1975,1995
 Maradona    : 1976,1997
 Bergomi :1979,1999
-shevchecko    : 1993,2012
-totti    : 1993,2017
-buffon    : 1995,2023
-giggs    : 1990,2014
-Torres    : 2001,2019
 vierchwood    : 1976,2000
 Matthaus  : 1978,2000
-
+zubizaretta    : 1979,1998
 Maldini    : 1984,2009
 Sanchis    : 1983,2001
-zubizaretta    : 1979,1998
 De Boer    : 1988,2008
 Laudrup    : 1981,1998
+shevchecko    : 1993,2012
+totti    : 1993,2017
+giggs    : 1990,2014
+buffon    : 1995,2023
+Torres    : 2001,2019
 ```
 ### Budget
 ```mermaid
