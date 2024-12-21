@@ -10,13 +10,12 @@ dateFormat  YYYY
 title Players
 
 section A section
-aparicio    : 1938,1952
-shevchecko    : 1938,1952
-totti    : 1938,1952
-buffon    : 1938,1952
-giggs    : 1938,1952
+shevchecko    : 1993,2012
+totti    : 1993,2017
+buffon    : 1995,2023
+giggs    : 1990,2014
 Torres    : 1938,1952
-Shilton    : 1938,1952
+Shilton    : 1966,1997
 vierchwood    : 1938,1952
 Maldini    : 1938,1952
 Sanchis    : 1938,1952
