@@ -2,6 +2,29 @@
 
 ## 2024
 
+### soccer players spanning significant periods
+
+```mermaid
+gantt
+dateFormat  YYYY
+title Players
+
+section A section
+aparicio    : 1938,1952
+shevchecko    : 1938,1952
+totti    : 1938,1952
+buffon    : 1938,1952
+giggs    : 1938,1952
+Torres    : 1938,1952
+Shilton    : 1938,1952
+vierchwood    : 1938,1952
+Maldini    : 1938,1952
+Sanchis    : 1938,1952
+Maradona    : 1938,1952
+zubizaretta    : 1938,1952
+De Boer    : 1938,1952
+Laudrup    : 1938,1952
+```
 ### Budget
 ```mermaid
 ---
