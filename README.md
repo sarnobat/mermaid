@@ -9,11 +9,11 @@ config:
     showValues: true
 ---
 sankey-beta
-rental car,expenses,1100
-storage+insurance,expenses,210
 airbnb,expenses,2040
+rental car,expenses,1100
 88 property shortfall,expenses,1000
 1614 property shortfall,expenses,600
+storage+insurance,expenses,210
 pwtorth,expenses,10
 phone,expenses,140
 netflix,expenses,20
