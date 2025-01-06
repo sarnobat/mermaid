@@ -10,6 +10,7 @@ config:
 ---
 sankey-beta
 rental car,expenses,1100
+storage+insurance,expenses,210
 airbnb,expenses,2040
 88 property shortfall,expenses,1000
 1614 property shortfall,expenses,600
