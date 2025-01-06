@@ -12,14 +12,13 @@ sankey-beta
 airbnb,expenses,2040
 rental car,expenses,1100
 88 property shortfall,expenses,1000
+food,expenses,800
 1614 property shortfall,expenses,600
 storage+insurance,expenses,210
-pwtorth,expenses,10
 phone,expenses,140
-netflix,expenses,20
 youtube TV,expenses,84
-food,expenses,800
-
+netflix,expenses,20
+pwtorth,expenses,10
 ```
 ### soccer players spanning significant periods
 
