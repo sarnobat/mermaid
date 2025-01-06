@@ -1,7 +1,25 @@
  # mermaid
 
 ## 2024
+### Budget monthly
+```mermaid
+---
+config:
+  sankey:
+    showValues: true
+---
+sankey-beta
+rental car,expenses,1100
+airbnb,expenses,2040
+88 property shortfall,expenses,1000
+1614 property shortfall,expenses,600
+pwtorth,expenses,10
+phone,expenses,140
+netflix,expenses,20
+youtube TV,expenses,84
+food,expenses,800
 
+```
 ### soccer players spanning significant periods
 
 ```mermaid
@@ -28,30 +46,7 @@ totti    : 1993,2017
 buffon    : 1995,2023
 Torres    : 2001,2019
 ```
-### Budget monthly
-```mermaid
----
-config:
-  sankey:
-    showValues: false
----
-sankey-beta
-rental car,expenses,1100
-airbnb,expenses,2040
-pwtorth,expenses,10
-Agricultural 'waste',Bio-conversion,124.729
-District heating,Heating and cooling - commercial,22.505
-District heating,Heating and cooling - homes,46.184
-Electricity grid,Over generation / exports,104.453
-Electricity grid,Heating and cooling - homes,113.726
-Electricity grid,H2 conversion,27.14
-Electricity grid,Industry,342.165
-Thermal generation,District heating,79.329
-Tidal,Electricity grid,9.452
-UK land based bioenergy,Bio-conversion,182.01
-Wave,Electricity grid,19.013
-Wind,Electricity grid,289.366
-```
+
 
 ## 2023
 ### Atletico players
