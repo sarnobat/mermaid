@@ -23,6 +23,9 @@ pwtorth,expenses,10
 ### soccer players spanning significant periods
 
 ```mermaid
+---
+displayMode: compact
+---
 gantt
 dateFormat  YYYY
 title Players
@@ -52,6 +55,9 @@ Torres    : 2001,2019
 ### Atletico players
 
 ```mermaid
+---
+displayMode: compact
+---
 gantt
 dateFormat  YYYY
 title Atletico Players
