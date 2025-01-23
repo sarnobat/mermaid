@@ -84,28 +84,25 @@ Joao Felix               :         2019, 2022
 ### Stadiums
 see also: https://docs.google.com/spreadsheets/d/1wopT5qG15EK1-_W8MO2E5Qeu--ashat0A70WFishQ7I/edit?gid=0#gid=0
 ```mermaid
+
+---
+displayMode: compact
+---
 gantt
 dateFormat  YYYY
 title Stadiums
 
-section A section
-San Mames    : 1938,1952
-Vicente Calderon : 1945,1958
-Sarria: 1998,2000
-Roker Park: 1998,2000
-Ayresome Park: 1998,2000
-Stadium of Light: 1998,2000
-Pride Park: 1998,2000
-Madjetski Stadium: 1998,2000
-Reebok Stadium: 1998,2000
-Highbury: 1998,2000
-Maine Road: 1998,2000
-Anoeta: 1998,2000
-White Hart Lane: 1998,2000
-Park de Princes: 1998,2000
-Tartiere: 1998,2000
-Lluís Sitjar: 1998,2000
-Filbert Street: 1998,2000
+San Mames    : 1913,2013
+Vicente Calderon : 1966,2017
+Sarria	:	1923	,	1997
+Roker Park 	:	1898	,	1997
+Ayresome Park 	:	1903	,	1997
+Lluís Sitjar 	:	1945	,	1999
+Tartiere 	:	1932	,	2000
+Filbert Street 	:	1891	,	2002
+Maine Road 	:	1923	,	2003
+Highbury 	:	1913	,	2006
+White Hart Lane 	:	1899	,	2017
 ```
 ### Sequence diagram
 
