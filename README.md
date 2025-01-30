@@ -19,6 +19,8 @@ phone,expenses,140
 youtube TV,expenses,84
 netflix,expenses,20
 pwtorth,expenses,10
+applecare,expenses,15
+dashpass,expenses,10
 ```
 ### soccer players spanning significant periods
 
