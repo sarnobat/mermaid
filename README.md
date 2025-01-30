@@ -15,12 +15,12 @@ rental car,expenses,1100
 food,expenses,800
 1614 property shortfall,expenses,600
 storage+insurance,expenses,210
-phone,expenses,140
-youtube TV,expenses,84
-netflix,expenses,20
-pwtorth,expenses,10
-applecare,expenses,15
-dashpass,expenses,10
+phone,expenses medium,140
+youtube TV,expenses medium,84
+netflix,expenses small,20
+pwtorth,expenses small,10
+applecare,expenses small,15
+dashpass,expenses small,10
 ```
 ### soccer players spanning significant periods
 
