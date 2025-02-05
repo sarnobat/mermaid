@@ -9,7 +9,7 @@ config:
     showValues: true
 ---
 sankey-beta
-airbnb,expenses,2040
+airbnb,expenses,1900
 rental car,expenses,1100
 88 property shortfall,expenses,1000
 food,expenses,800
@@ -18,7 +18,7 @@ storage+insurance,expenses,210
 phone,expenses medium,140
 youtube TV,expenses medium,84
 netflix,expenses small,20
-pwtorth,expenses small,10
+pwtorch,expenses small,10
 applecare,expenses small,15
 dashpass,expenses small,10
 ```
