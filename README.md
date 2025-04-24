@@ -109,6 +109,26 @@ Maine Road 	:	1923	,	2003
 Highbury 	:	1913	,	2006
 White Hart Lane 	:	1899	,	2017
 ```
+
+### Musicians
+see also:
+* https://docs.google.com/spreadsheets/d/1a8LbwMELrVSXFf-VJ54fop96Cmk_pPUq9ezvaqk-41g/edit?gid=0#gid=0
+* https://docs.google.com/spreadsheets/d/1K2K2Is2F2mY2l5gQZ9RBPOK0IRQWak8SNxzKVGvxv1E/edit?gid=1210820633#gid=1210820633
+* 
+```mermaid
+
+---
+displayMode: compact
+---
+gantt
+dateFormat  YYYY
+title Musicians
+
+Mozart    : 1900,1901
+
+```
+
+
 ### Sequence diagram
 
 ```mermaid
