@@ -1,4 +1,9 @@
- # mermaid
+# mermaid
+
+## 2025
+Summary of diagram types:
+* https://mermaid.live/edit
+* https://mermaid.js.org/intro/
 
 ## 2024
 ### gitgraph / railroad
