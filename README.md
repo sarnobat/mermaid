@@ -31,6 +31,8 @@ gitGraph:
     checkout usa
     commit id: "1880 USA rugby cut from 15 to 11 players (American football)"
     checkout football
+    branch Argentina
+    commit id: "1887 First argentine club founded"
     branch Spain
     commit id: "1889 December 23 Recreativo Huelva founded"
     commit id: "1890 Sevilla founded"
