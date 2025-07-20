@@ -13,11 +13,15 @@ https://github.com/sarnobat/atleticomadrid?tab=readme-ov-file#atleticomadrid
 
 ```mermaid
 gitGraph:
+    commit id: "begin"
     branch rugby
+    checkout rugby
     commit id: "1845 Rugby school football rules published"
     commit id: "1847 Eton school football rules published"
     commit id: "1863 October FA rules created"
     commit id: "1863 FA Founded in London"
+    checkout main
+    merge rugby
     branch Spain
     commit id: "1889 December 23 Recreativo Huelva founded"
     commit id: "1890 Sevilla founded"
