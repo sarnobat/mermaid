@@ -26,8 +26,11 @@ gitGraph:
     commit id: "1889 December 23 Recreativo Huelva founded"
     commit id: "1890 Sevilla founded"
     branch Barcelona
+    checkout Barcelona
     commit id: "1898 Barcelona founded"
+    checkout Spain
     branch Bilbao
+    checkout Bilbao
     commit id: "1898 July 18 Bilbao founded"
     branch Madrid
     commit "club 1 founded"
