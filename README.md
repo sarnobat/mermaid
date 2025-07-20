@@ -9,7 +9,8 @@ Summary of diagram types:
 ### gitgraph / railroad
 https://github.com/sarnobat/atleticomadrid?tab=readme-ov-file#atleticomadrid
 
-Not master copy:
+* TODO 2024-04-24: rotate existing, and add all articles as plaintext files (txt or mwk, not html I think)
+
 ```mermaid
 gitGraph:
     commit id: "1847 Eton rules football published"
@@ -42,6 +43,9 @@ gitGraph:
     merge Barcelona
     commit id: "1921 Copa del Rey final"
 ```
+
+Only use tracks for longitudinal entities. Parma wouldn't have much for example (though it would be good to explain their sudden rise from obscurity).
+
 
 
 ### Budget monthly
