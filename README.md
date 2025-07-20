@@ -58,10 +58,20 @@ gitGraph:
     checkout Atletico
     commit id: "Attended by Bilbao students in Madrid"
     commit id: "1908 Stripes vs Real"
+    branch AviacionNacional
+    checkout AviacionNacional
+    commit id: "1938 Aviacion Nacional founded in Salamanca"
+    checkout Atletico
+    merge AviacionNacional
     checkout Spain
     merge Atletico
     merge Barcelona
     commit id: "1921 Copa del Rey final"
+    commit id: "1928 Campeonato Nacional (League) founded"
+    checkout Atletico
+    commit id: "1940 Atletico Aviacion win last Madrid regional league"
+    checkout Spain
+    commit id: "1940 Regional leagues defuct"
 ```
 
 Only use tracks for longitudinal entities. Parma wouldn't have much for example (though it would be good to explain their sudden rise from obscurity).
