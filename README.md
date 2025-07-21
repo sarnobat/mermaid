@@ -34,7 +34,9 @@ gitGraph:
     commit id: "1866 first association football match in USA"
     checkout rugby
     branch usa_american_football
-    commit id: "1880 USA rugby cut from 15 to 11 players (American football)"
+    commit id: "1869 USA gridiron football first ever game"
+    commit id: "1874 Harvard vs Yale"
+    commit id: "1880 USA rugby cut from 15 to 11 players (modern American football)"
     checkout football
     branch Argentina
     commit id: "1887 First argentine club founded"
@@ -67,6 +69,8 @@ gitGraph:
     merge Bilbao
     commit id: "1903 Copa de la Coronacion" type: HIGHLIGHT
     branch Atletico
+    checkout usa_american_football
+    commit id: "1906 forward pass permitted"
     checkout Atletico
     commit id: "Attended by Bilbao students in Madrid"
     commit id: "1908 Stripes vs Real"
@@ -91,6 +95,10 @@ gitGraph:
     commit id: "1940 Atletico Aviacion win last Madrid regional league"
     checkout Spain
     commit id: "1940 Regional leagues defuct"
+    checkout main
+    commit id: "1955 Floodlighting invented"
+    checkout football
+    commit id: "1955 weekday football becomes possible"
     checkout usa
     commit id: "1967 NASL founded"
 ```
