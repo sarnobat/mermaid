@@ -98,7 +98,8 @@ gitGraph:
     checkout main
     commit id: "1955 Floodlighting invented"
     checkout football
-    commit id: "1955 weekday football becomes possible"
+    commit id: "1955 weekday football becomes possible, European Cup inaugurated"
+    commit id: "1963 transfer system inception"
     checkout usa
     commit id: "1967 NASL founded"
 ```
