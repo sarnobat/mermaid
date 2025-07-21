@@ -21,18 +21,26 @@ gitGraph:
     commit id: "1845 Rugby school football rules published"
     checkout football
     commit id: "1847 Eton school football rules published"
+    commit id: "1859 Australian rules football"
+    commit id: "1858 Sheffield rules football"
     commit id: "1863 October FA rules created"
     commit id: "1863 FA Founded in London"
+    branch usa
     checkout main
     merge football
     checkout football
     checkout rugby
-    branch usa
     checkout usa
+    commit id: "1866 first association football match in USA"
     commit id: "1880 USA rugby cut from 15 to 11 players (American football)"
     checkout football
     branch Argentina
     commit id: "1887 First argentine club founded"
+    checkout football
+    commit id: "1887 Gaelic football rules drawn pu in Ireland"
+    checkout main
+    merge football
+    checkout football
     branch Spain
     commit id: "1889 December 23 Recreativo Huelva founded"
     commit id: "1890 Sevilla founded"
@@ -60,6 +68,13 @@ gitGraph:
     checkout Atletico
     commit id: "Attended by Bilbao students in Madrid"
     commit id: "1908 Stripes vs Real"
+    checkout usa
+    commit id: "1921 NASL founded"
+    checkout Spain
+    merge Atletico
+    merge Barcelona
+    commit id: "1926 Copa Del Rey final"
+    checkout Atletico
     branch AviacionNacional
     checkout AviacionNacional
     commit id: "1938 Aviacion Nacional founded in Salamanca"
@@ -74,6 +89,8 @@ gitGraph:
     commit id: "1940 Atletico Aviacion win last Madrid regional league"
     checkout Spain
     commit id: "1940 Regional leagues defuct"
+    checkout usa
+    commit id: "1967 NASL founded"
 ```
 
 Only use tracks for longitudinal entities. Parma wouldn't have much for example (though it would be good to explain their sudden rise from obscurity).
