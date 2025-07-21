@@ -32,6 +32,8 @@ gitGraph:
     checkout rugby
     checkout usa
     commit id: "1866 first association football match in USA"
+    checkout rugby
+    branch usa_american_football
     commit id: "1880 USA rugby cut from 15 to 11 players (American football)"
     checkout football
     branch Argentina
