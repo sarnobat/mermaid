@@ -11,6 +11,7 @@ https://github.com/sarnobat/atleticomadrid?tab=readme-ov-file#atleticomadrid
 
 * TODO 2024-04-24: rotate existing, and add all articles as plaintext files (txt or mwk, not html I think)
 
+
 ```mermaid
 gitGraph:
     commit id: "begin"
@@ -98,6 +99,7 @@ gitGraph:
     checkout main
     commit id: "1955 Floodlighting invented"
     checkout football
+    merge main
     commit id: "1955 weekday football becomes possible, European Cup inaugurated"
     commit id: "1963 transfer system inception"
     checkout usa
