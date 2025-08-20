@@ -169,6 +169,61 @@ Torres    : 2001,2019
 ---
 displayMode: compact
 ---
+
+
+gantt
+    title Atlético Madrid tenures (2011–2022) — ordered by final departure year
+    dateFormat  YYYY-MM-DD
+    axisFormat  %Y
+
+    %% 2013
+    section 2013
+    Radamel Falcao            :2011-08-01, 2013-07-01
+
+    %% 2014
+    section 2014
+    Thibaut Courtois          :2011-07-01, 2014-07-01
+    Filipe Luís (I)           :2011-01-01, 2014-07-01
+
+    %% 2017
+    section 2017
+    Tiago Mendes              :2011-07-01, 2017-06-30
+
+    %% 2018
+    section 2018
+    Gabi                      :2011-07-01, 2018-06-30
+    Filipe Luís (II)          :2015-07-01, 2018-07-01
+    Yannick Carrasco (I)      :2015-07-01, 2018-02-01
+
+    %% 2019
+    section 2019
+    Diego Godín               :2011-01-01, 2019-06-30
+    Juanfran                  :2011-01-01, 2019-06-30
+    Antoine Griezmann (I)     :2014-07-01, 2019-06-30
+
+    %% 2020
+    section 2020
+    Diego Costa (II)          :2018-01-01, 2020-12-31
+
+    %% 2021
+    section 2021
+    Saúl Ñíguez               :2012-01-01, 2021-06-30
+
+    %% 2022
+    section 2022
+    Yannick Carrasco (II)     :2020-02-01, 2022-12-31
+    Antoine Griezmann (II)    :2021-08-31, 2022-12-31
+    José María Giménez        :2013-07-01, 2022-12-31
+    Ángel Correa              :2014-12-01, 2022-12-31
+    Jan Oblak                 :2014-07-16, 2022-12-31
+    Koke                      :2011-01-01, 2022-12-31
+```
+
+```mermaid
+---
+displayMode: compact
+---
+
 gantt
 dateFormat  YYYY
 title Atletico Players
