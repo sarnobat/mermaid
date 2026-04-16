@@ -118,13 +118,14 @@ config:
     showValues: true
 ---
 sankey-beta
-work,salary,18083
+work,salary,12241
 work,tax,5842
 salary,savings,1808
 boa mortgage and tax,expenses,2885
 wells fargo mortgage and tax,expenses,1780
 patelco,expenses,181
 airbnb,expenses,1900
+boston student,expenses,590
 rental car,expenses,1100
 hoa 88 property,expenses,566
 food,expenses,800
