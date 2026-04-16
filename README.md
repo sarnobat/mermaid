@@ -118,9 +118,11 @@ config:
     showValues: true
 ---
 sankey-beta
-work,salary,12241
+1614 rent,income,1980
+88 m jackson rent, income,2750
+work,income,12241
 work,tax,5842
-salary,savings,1808
+income,savings,1808
 boa mortgage and tax,expenses,2885
 wells fargo mortgage and tax,expenses,1780
 patelco,expenses,181
