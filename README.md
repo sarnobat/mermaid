@@ -240,10 +240,10 @@ Garate:done,1966,1977
 tomas    : 1984,1996
 juan manuel lopez: 1991,2001
 toni munoz: 1990,2001
-kiko : 1993-2001
+kiko : 1993,2001
 aguilera : 1988 , 2005
 santi : 1995, 2004
-antonio lopez: 2001, 2004
+antonio lopez: 2000, 2002
 antonio lopez: 2004, 2012
 mejias: 1981,1993
 koke    : 2013,2024
