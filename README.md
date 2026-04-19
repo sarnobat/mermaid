@@ -135,7 +135,10 @@ hoa 1614 property shortfall,expenses,635
 storage+insurance,expenses,210
 phone,expenses medium,140
 youtube TV,expenses medium,84
+espn,expenses small,30
 netflix,expenses small,20
+audible,expenses small,20
+peacock,expenses small,13
 pwtorch,expenses small,10
 applecare,expenses small,15
 dashpass,expenses small,10
