@@ -136,6 +136,8 @@ storage+insurance,expenses,210
 phone,expenses medium,140
 youtube TV,expenses medium,84
 espn,expenses small,30
+claude,expenses small,20
+audible,expenses small,20
 netflix,expenses small,20
 audible,expenses small,20
 peacock,expenses small,13
