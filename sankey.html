@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Budget Monthly – Sankey</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f5f5f5;
+      color: #222;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    #chart {
+      display: flex;
+      justify-content: center;
+    }
+    .node rect {
+      cursor: grab;
+      fill-opacity: 0.9;
+      shape-rendering: crispEdges;
+    }
+    .node rect:hover {
+      fill-opacity: 1;
+    }
+    .node text {
+      pointer-events: none;
+      font-size: 11px;
+      fill: #222;
+    }
+    .link {
+      fill: none;
+      stroke-opacity: 0.35;
+    }
+    .link:hover {
+      stroke-opacity: 0.6;
+    }
+    .tooltip {
+      position: absolute;
+      background: rgba(0,0,0,0.75);
+      color: #fff;
+      padding: 6px 10px;
+      border-radius: 4px;
+      font-size: 12px;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+  </style>
+</head>
+<body>
+  <h1>Budget Monthly</h1>
+  <div id="chart"></div>
+  <div class="tooltip" id="tooltip"></div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://unpkg.com/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
+  <script>
+    const links = [
+      // Income sources → income node
+      { source: "1614 rent",                    target: "income",          value: 1980 },
+      { source: "88 m jackson rent",            target: "income",          value: 2750 },
+      { source: "work",                         target: "income",          value: 12241 },
+      // work → tax (direct outflow)
+      { source: "work",                         target: "tax",             value: 5842 },
+      // income → savings
+      { source: "income",                       target: "savings",         value: 1808 },
+      // Large/fixed expenses → expenses
+      { source: "boa mortgage and tax",         target: "expenses",        value: 2885 },
+      { source: "wells fargo mortgage and tax", target: "expenses",        value: 1780 },
+      { source: "airbnb",                       target: "expenses",        value: 1900 },
+      { source: "boston student",               target: "expenses",        value: 590  },
+      { source: "rental car",                   target: "expenses",        value: 1100 },
+      { source: "hoa 88 property",              target: "expenses",        value: 566  },
+      { source: "hoa 1614 shortfall",           target: "expenses",        value: 635  },
+      { source: "food",                         target: "expenses",        value: 300  },
+      { source: "doordash food",                target: "expenses",        value: 500  },
+      { source: "storage+insurance",            target: "expenses",        value: 210  },
+      { source: "patelco",                      target: "expenses",        value: 181  },
+      // Medium expenses → expenses medium
+      { source: "phone",                        target: "expenses medium", value: 140  },
+      { source: "youtube TV",                   target: "expenses medium", value: 84   },
+      // Small subscriptions → expenses small
+      { source: "espn",                         target: "expenses small",  value: 30   },
+      { source: "claude",                       target: "expenses small",  value: 20   },
+      { source: "audible",                      target: "expenses small",  value: 40   },
+      { source: "netflix",                      target: "expenses small",  value: 20   },
+      { source: "peacock",                      target: "expenses small",  value: 13   },
+      { source: "pwtorch",                      target: "expenses small",  value: 10   },
+      { source: "applecare",                    target: "expenses small",  value: 15   },
+      { source: "dashpass",                     target: "expenses small",  value: 10   },
+    ];
+
+    // Build unique node list
+    const nodeNames = Array.from(new Set(links.flatMap(l => [l.source, l.target])));
+    const nodeIndex = Object.fromEntries(nodeNames.map((n, i) => [n, i]));
+    const nodes = nodeNames.map(name => ({ name }));
+    const sankeyLinks = links.map(l => ({
+      source: nodeIndex[l.source],
+      target: nodeIndex[l.target],
+      value: l.value
+    }));
+
+    // Color palette
+    const colorGroups = {
+      // income-side sources
+      "1614 rent": "#4fc3f7", "88 m jackson rent": "#29b6f6", "work": "#0288d1",
+      "income": "#26c6da", "savings": "#00897b", "tax": "#ef5350",
+      // large expenses
+      "expenses": "#ff7043",
+      "boa mortgage and tax": "#ffa726", "wells fargo mortgage and tax": "#ffb74d",
+      "airbnb": "#ff8a65", "boston student": "#ffcc02", "rental car": "#d4e157",
+      "hoa 88 property": "#aed581", "hoa 1614 shortfall": "#81c784",
+      "food": "#4db6ac", "doordash food": "#4dd0e1",
+      "storage+insurance": "#90a4ae", "patelco": "#78909c",
+      // medium expenses
+      "expenses medium": "#ab47bc",
+      "phone": "#ce93d8", "youtube TV": "#ba68c8",
+      // small expenses
+      "expenses small": "#7e57c2",
+      "espn": "#b39ddb", "claude": "#9575cd", "audible": "#7986cb",
+      "netflix": "#e57373", "peacock": "#64b5f6", "pwtorch": "#a5d6a7",
+      "applecare": "#80cbc4", "dashpass": "#ffb74d"
+    };
+    const defaultColor = "#888";
+
+    const margin = { top: 10, right: 180, bottom: 10, left: 180 };
+    const width = Math.max(800, window.innerWidth - margin.left - margin.right - 40);
+    const height = 700;
+
+    const svg = d3.select("#chart")
+      .append("svg")
+      .attr("width", width + margin.left + margin.right)
+      .attr("height", height + margin.top + margin.bottom)
+      .append("g")
+      .attr("transform", `translate(${margin.left},${margin.top})`);
+
+    const sankey = d3.sankey()
+      .nodeId(d => d.index)
+      .nodeWidth(18)
+      .nodePadding(12)
+      .extent([[0, 0], [width, height]]);
+
+    const graph = sankey({
+      nodes: nodes.map((d, i) => ({ ...d, index: i })),
+      links: sankeyLinks
+    });
+
+    const tooltip = d3.select("#tooltip");
+
+    // Draw links (kept as a selection we can redraw)
+    const linkG = svg.append("g");
+    function drawLinks() {
+      linkG.selectAll(".link")
+        .data(graph.links)
+        .join("path")
+        .attr("class", "link")
+        .attr("d", d3.sankeyLinkHorizontal())
+        .attr("stroke", d => colorGroups[d.source.name] || defaultColor)
+        .attr("stroke-width", d => Math.max(1, d.width))
+        .on("mouseover", (event, d) => {
+          tooltip.style("opacity", 1)
+            .html(`<strong>${d.source.name}</strong> → <strong>${d.target.name}</strong><br>$${d.value.toLocaleString()}`);
+        })
+        .on("mousemove", event => {
+          tooltip.style("left", (event.pageX + 12) + "px").style("top", (event.pageY - 28) + "px");
+        })
+        .on("mouseout", () => tooltip.style("opacity", 0));
+    }
+    drawLinks();
+
+    // Drag behavior — vertical only, clamped to svg bounds
+    const drag = d3.drag()
+      .on("start", function() {
+        d3.select(this).select("rect").style("cursor", "grabbing");
+      })
+      .on("drag", function(event, d) {
+        const nodeWidth = d.x1 - d.x0;
+        const nodeHeight = d.y1 - d.y0;
+        d.x0 = Math.max(0, Math.min(width - nodeWidth, d.x0 + event.dx));
+        d.x1 = d.x0 + nodeWidth;
+        d.y0 = Math.max(0, Math.min(height - nodeHeight, d.y0 + event.dy));
+        d.y1 = d.y0 + nodeHeight;
+        d3.select(this).attr("transform", `translate(${d.x0},${d.y0})`);
+        sankey.update(graph);
+        drawLinks();
+      })
+      .on("end", function() {
+        d3.select(this).select("rect").style("cursor", "grab");
+      });
+
+    // Draw nodes
+    const node = svg.append("g")
+      .selectAll(".node")
+      .data(graph.nodes)
+      .join("g")
+      .attr("class", "node")
+      .attr("transform", d => `translate(${d.x0},${d.y0})`)
+      .call(drag);
+
+    node.append("rect")
+      .attr("height", d => Math.max(1, d.y1 - d.y0))
+      .attr("width", d => d.x1 - d.x0)
+      .attr("fill", d => colorGroups[d.name] || defaultColor)
+      .attr("rx", 3)
+      .on("mouseover", (event, d) => {
+        const total = Math.max(
+          d3.sum(d.sourceLinks, l => l.value),
+          d3.sum(d.targetLinks, l => l.value)
+        );
+        tooltip.style("opacity", 1)
+          .html(`<strong>${d.name}</strong><br>$${total.toLocaleString()}`);
+      })
+      .on("mousemove", event => {
+        tooltip.style("left", (event.pageX + 12) + "px").style("top", (event.pageY - 28) + "px");
+      })
+      .on("mouseout", () => tooltip.style("opacity", 0));
+
+    // Labels
+    node.append("text")
+      .attr("x", d => d.x0 < width / 2 ? -(d.x1 - d.x0) - 6 : (d.x1 - d.x0) + 6)
+      .attr("y", d => (d.y1 - d.y0) / 2)
+      .attr("dy", "0.35em")
+      .attr("text-anchor", d => d.x0 < width / 2 ? "end" : "start")
+      .text(d => {
+        const total = Math.max(
+          d3.sum(d.sourceLinks, l => l.value),
+          d3.sum(d.targetLinks, l => l.value)
+        );
+        return `${d.name} ($${total.toLocaleString()})`;
+      });
+  </script>
+</body>
+</html>
