@@ -130,7 +130,8 @@ airbnb,expenses,1900
 boston student,expenses,590
 rental car,expenses,1100
 hoa 88 property,expenses,566
-food,expenses,800
+food,expenses,300
+doordash food,expenses,500
 hoa 1614 property shortfall,expenses,635
 storage+insurance,expenses,210
 phone,expenses medium,140
