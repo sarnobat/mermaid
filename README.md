@@ -17,6 +17,7 @@ Wimpy : 1975,1989
 Littlewoods:1965,2005
 Index:1985-2005
 Argos original: 1978-1994
+John Menzies: 1975-1998
 ```
 
 ## 2025
