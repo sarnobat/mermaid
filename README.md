@@ -1,5 +1,24 @@
 # mermaid
 
+## 2026
+
+```mermaid
+---
+displayMode: compact
+---
+gantt
+dateFormat  YYYY
+title Cardiff Stores
+
+section A section
+C&A      : 1963,2001
+Great British Burger : 1984,1988
+Wimpy : 1975,1989
+Littlewoods:1965,2005
+Index:1985-2005
+Argos original: 1978-1994
+```
+
 ## 2025
 Summary of diagram types:
 * https://mermaid.live/edit
