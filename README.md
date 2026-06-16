@@ -13,12 +13,15 @@ sankey-beta
 
 Etouch Standard,Rollover 2020,10386.06
 Control4 Principal,Rollover 2020,12800
+Rollover 2020,Rollover 2026,54149.44
 Apple Empower,TD Ameritrade/Schwab,18007.63
-Oracle,Fidelity Oracle,13112.00
-Meta,Fidelity Meta,8445.36
-Cisco,Fidelity Cisco,74042.00
-Fidelity Cisco,Fidelity Cisco After Boston,15012.73
-Fidelity Cisco,Boston withdrawals before tax and penalties,59029.27
+TD Ameritrade/Schwab,Schwab 2026,53195.79
+Oracle,Fidelity Oracle 2012,13112.00
+Fidelity Oracle 2012,Fidelity Oracle 2026,55254.00
+Meta,Fidelity Meta 2026,13958.77
+Cisco,Fidelity Cisco 2023,74042.00
+Fidelity Cisco 2023,Fidelity Cisco 2026,15012.73
+Fidelity Cisco 2023,Boston withdrawals before tax and penalties,59029.27
 ```
 
 ```mermaid
