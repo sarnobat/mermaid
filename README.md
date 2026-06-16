@@ -2,6 +2,25 @@
 
 ## 2026
 
+
+```mermaid
+---
+config:
+  sankey:
+    showValues: true
+---
+sankey-beta
+
+Etouch Standard,Rollover 2020,10386.06
+Control4 Principal,Rollover 2020,12800
+Apple Empower,TD Ameritrade/Schwab,18007.63
+Oracle,Fidelity Oracle,13112.00
+Meta,Fidelity Meta,8445.36
+Cisco,Fidelity Cisco,74042.00
+Fidelity Cisco,Fidelity Cisco After Boston,15012.73
+Fidelity Cisco,Boston withdrawals before tax and penalties,59029.27
+```
+
 ```mermaid
 ---
 displayMode: compact
@@ -131,16 +150,6 @@ Only use tracks for longitudinal entities. Parma wouldn't have much for example 
 
 
 ### Budget monthly
-```mermaid
----
-config:
-  sankey:
-    showValues: true
----
-sankey-beta
-
-Standard,Rollover,10386.06
-```
 
 ```mermaid
 ---
