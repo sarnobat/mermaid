@@ -138,6 +138,20 @@ config:
     showValues: true
 ---
 sankey-beta
+
+1614 rent,income,1980
+88 m jackson rent, income,2750
+work,income,12241
+work,tax,5842
+```
+
+```mermaid
+---
+config:
+  sankey:
+    showValues: true
+---
+sankey-beta
 1614 rent,income,1980
 88 m jackson rent, income,2750
 work,income,12241
