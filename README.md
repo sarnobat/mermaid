@@ -139,10 +139,7 @@ config:
 ---
 sankey-beta
 
-1614 rent,income,1980
-88 m jackson rent, income,2750
-work,income,12241
-work,tax,5842
+Standard,Rollover,10386.06
 ```
 
 ```mermaid
