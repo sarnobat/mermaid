@@ -147,11 +147,15 @@ gitGraph:
     commit id: "1940 Regional leagues defuct"
     checkout main
     commit id: "1955 Floodlighting invented"
+    commit id: "1962 Telstar 1 launched"
     checkout football
     merge main
     commit id: "1955 weekday football becomes possible, European Cup inaugurated"
     commit id: "1963 transfer system inception"
+    checkout main
+    commit id: "1965 Early Bird (Intelsat I) satellite"
     checkout world_cup
+    merge main id: "1966 World Cup broadcast live to South America"
     commit id: "1966 England win World Cup"
     checkout usa
     merge world_cup
@@ -160,6 +164,20 @@ gitGraph:
     commit id: "1970 Brazil win World Cup"
     checkout usa
     merge world_cup id: "1975 Pele joins NY Cosmos"
+    checkout main
+    commit id: "1984 Sky Channel uses ECS-1/Eutelsat I-F1"
+    checkout football
+    commit id: "1987 Dalglish scouts Europe by satellite dish"
+    checkout main
+    commit id: "1988 Astra 1A launched"
+    checkout Spain
+    merge main id: "1988 Atletico vs Barcelona on Screensport"
+    checkout football
+    merge Spain id: "spanish football viewable in UK"
+    checkout Spain
+    commit id: "1997 Spanish football on Sky Sports"
+    checkout football
+    merge Spain id: "1997 Sky Sports shows Spanish football"
 ```
 
 Only use tracks for longitudinal entities. Parma wouldn't have much for example (though it would be good to explain their sudden rise from obscurity).
