@@ -55,7 +55,7 @@ https://github.com/sarnobat/atleticomadrid?tab=readme-ov-file#atleticomadrid
 
 
 ```mermaid
-gitGraph:
+gitGraph TB:
     commit id: "begin"
     branch football
     checkout football
