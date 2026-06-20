@@ -118,7 +118,8 @@ gitGraph:
     commit id: "Attended by Bilbao students in Madrid"
     commit id: "1908 Stripes vs Real"
     checkout usa
-    commit id: "1921 NASL founded"
+    commit id: "1921 American Soccer League founded"
+    commit id: "1930 USA enters first World Cup"
     checkout Spain
     merge Atletico
     merge Barcelona
@@ -134,6 +135,12 @@ gitGraph:
     merge Barcelona
     commit id: "1921 Copa del Rey final"
     commit id: "1928 Campeonato Nacional (League) founded"
+    checkout football
+    commit id: "1904 FIFA founded"
+    branch world_cup
+    checkout world_cup
+    commit id: "1908 FIFA stages Olympic football tournament"
+    merge usa id: "1930 First FIFA World Cup"
     checkout Atletico
     commit id: "1940 Atletico Aviacion win last Madrid regional league"
     checkout Spain
@@ -144,8 +151,15 @@ gitGraph:
     merge main
     commit id: "1955 weekday football becomes possible, European Cup inaugurated"
     commit id: "1963 transfer system inception"
+    checkout world_cup
+    commit id: "1966 England win World Cup"
     checkout usa
+    merge world_cup
     commit id: "1967 NASL founded"
+    checkout world_cup
+    commit id: "1970 Brazil win World Cup"
+    checkout usa
+    merge world_cup id: "1975 Pele joins NY Cosmos"
 ```
 
 Only use tracks for longitudinal entities. Parma wouldn't have much for example (though it would be good to explain their sudden rise from obscurity).
