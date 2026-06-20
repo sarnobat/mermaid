@@ -119,7 +119,6 @@ gitGraph TB:
     commit id: "1908 Stripes vs Real"
     checkout usa
     commit id: "1921 American Soccer League founded"
-    commit id: "1930 USA enters first World Cup"
     checkout Spain
     merge Atletico
     merge Barcelona
@@ -140,6 +139,9 @@ gitGraph TB:
     branch world_cup
     checkout world_cup
     commit id: "1908 FIFA stages Olympic football tournament"
+    checkout usa
+    commit id: "1930 USA enters first World Cup"
+    checkout world_cup
     merge usa id: "1930 First FIFA World Cup"
     checkout Atletico
     commit id: "1940 Atletico Aviacion win last Madrid regional league"
@@ -147,12 +149,16 @@ gitGraph TB:
     commit id: "1940 Regional leagues defuct"
     checkout main
     commit id: "1955 Floodlighting invented"
-    commit id: "1962 Telstar 1 launched"
     checkout football
     merge main
-    commit id: "1955 weekday football becomes possible, European Cup inaugurated"
+    commit id: "1955 weekday football becomes possible"
+    commit id: "1955 European Cup introduced"
+    checkout Spain
+    merge football id: "Real Madrid dominate European Cup"
+    checkout football
     commit id: "1963 transfer system inception"
     checkout main
+    commit id: "1962 Telstar 1 launched"
     commit id: "1965 Early Bird (Intelsat I) satellite"
     checkout world_cup
     merge main id: "1966 World Cup broadcast live to South America"
@@ -162,10 +168,20 @@ gitGraph TB:
     commit id: "1967 NASL founded"
     checkout world_cup
     commit id: "1970 Brazil win World Cup"
+    checkout main
+    commit id: "1973 energy crisis"
+    checkout football
+    merge main id: "1974 weekend matches split across Saturdays and Sundays"
     checkout usa
     merge world_cup id: "1975 Pele joins NY Cosmos"
     checkout main
     commit id: "1984 Sky Channel uses ECS-1/Eutelsat I-F1"
+    checkout football
+    merge main id: "satellite football broadcasts reach UK"
+    checkout world_cup
+    commit id: "1986 Gary Lineker wins Golden Boot"
+    checkout Spain
+    merge world_cup id: "1986 Barcelona sign Lineker"
     checkout football
     commit id: "1987 Dalglish scouts Europe by satellite dish"
     checkout main
