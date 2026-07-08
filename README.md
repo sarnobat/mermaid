@@ -2,6 +2,26 @@
 
 ## 2026
 
+```mermaid
+---
+config:
+  sankey:
+    showValues: true
+---
+sankey-beta
+1614 rent,income,1980
+88 m jackson rent,income,2750
+boa mortgage and tax,covered expenses,2885
+wells fargo mortgage and tax,covered expenses,1780
+patelco,expenses,181
+hoa 88 property,expenses,566
+hoa 1614 property,expenses,635
+storage+insurance,expenses,210
+phone,expenses medium,140
+chatgpt,expenses small,20
+pwtorch,expenses small,10
+applecare,expenses small,15
+```
 
 ```mermaid
 ---
