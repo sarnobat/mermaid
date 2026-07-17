@@ -19,6 +19,7 @@ hoa 1614 property,expenses,635
 cc patelco interest,expenses,300
 cc boa interest,expenses,199
 storage+insurance,expenses,210
+postscanmail,expenses,100
 phone,expenses medium,140
 chatgpt,expenses small,20
 pwtorch,expenses small,10
