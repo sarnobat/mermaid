@@ -15,6 +15,8 @@ boa mortgage and tax,covered expenses,2885
 wells fargo mortgage and tax,covered expenses,1780
 patelco,expenses,181
 hoa 88 property,expenses,635
+tax liabilty federal I think,expenses,80
+tax liabilty state no plan,expenses,120
 hoa 1614 property,expenses,616.82
 cc patelco interest,expenses,300
 cc boa interest,expenses,199
