@@ -2,6 +2,68 @@
 
 ## 2026
 
+## 2026
+
+### WWE break: WrestleMania 1999 to July 2005
+
+```mermaid
+gantt
+    title WWE: away after WrestleMania XV, back July 2005
+    dateFormat  YYYY-MM-DD
+    axisFormat  %Y
+
+    section You
+    Away from WWE                 :crit, 1999-03-29, 2005-07-01
+    Returned                      :milestone, 2005-07-01, 0d
+
+    section Still There Before + After
+    Bradshaw / JBL                :active, 1996-01-27, 2009-04-05
+    Val Venis                     :active, 1998-05-18, 2009-01-09
+    Funaki                        :active, 1998-06-01, 2010-04-22
+    Undertaker                    :active, 1990-11-22, 2020-11-22
+
+    section Came During Your Break
+    Kurt Angle                    :active, 1999-11-14, 2006-08-25
+    Shawn Michaels in-ring return :active, 2002-08-25, 2010-03-28
+
+    section Gone / Changed Context
+    Shawn Michaels first run      :done, 1988-01-01, 1998-03-29
+```
+
+### Soccer break: 1993 to 1998
+
+```mermaid
+gantt
+    title Soccer: away from 1993, back in 1998
+    dateFormat  YYYY-MM-DD
+    axisFormat  %Y
+
+    section You
+    Away from soccer              :crit, 1993-01-01, 1998-01-01
+    Returned                      :milestone, 1998-01-01, 0d
+
+    section Still There Before + After
+    Les Ferdinand - QPR           :active, 1987-07-01, 1995-07-01
+    Les Ferdinand - Newcastle     :active, 1995-07-01, 1997-07-01
+    Les Ferdinand - Tottenham     :active, 1997-07-01, 2003-07-01
+    Kevin Campbell - Arsenal      :active, 1988-07-01, 1995-07-01
+    Kevin Campbell - Nottingham Forest :active, 1995-07-01, 1998-07-01
+    Sol Campbell - Tottenham      :active, 1992-12-01, 2001-07-01
+    Steve McManaman - Liverpool   :active, 1990-12-15, 1999-07-01
+    David James - Liverpool       :active, 1992-07-06, 1999-06-17
+
+    section Came During Your Break
+    Rio Ferdinand - West Ham      :active, 1995-11-01, 2000-11-01
+
+    section Arrived Just After Return
+    Kevin Campbell - Everton      :active, 1999-01-01, 2005-07-01
+    Steve McManaman - Real Madrid :active, 1999-07-01, 2003-07-01
+    David James - Aston Villa     :active, 1999-06-17, 2001-07-01
+```
+
+
+
+###
 ```mermaid
 ---
 config:
