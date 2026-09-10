@@ -2,8 +2,6 @@
 
 ## 2026
 
-## 2026
-
 ### WWE break: WrestleMania 1999 to July 2005
 
 ```mermaid
@@ -24,10 +22,10 @@ gantt
 
     section Came During Your Break
     Kurt Angle                    :active, 1999-11-14, 2006-08-25
-    Shawn Michaels in-ring return :active, 2002-08-25, 2010-03-28
 
-    section Gone / Changed Context
-    Shawn Michaels first run      :done, 1988-01-01, 1998-03-29
+    section Shawn Michaels
+    Shawn Michaels                :done, 1988-01-01, 1998-03-29
+    Shawn Michaels                :active, 2002-08-25, 2010-03-28
 ```
 
 ### Soccer break: 1993 to 1998
